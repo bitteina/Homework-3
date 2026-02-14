@@ -4074,6 +4074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gripInput: {fileID: 8871332926269954368, guid: 6febe43c10ec45344b8b6d24cdd1be0e, type: 3}
   triggerInput: {fileID: -3106655500666966481, guid: 6febe43c10ec45344b8b6d24cdd1be0e, type: 3}
+  indexInput: {fileID: -8216424901958224900, guid: 6febe43c10ec45344b8b6d24cdd1be0e, type: 3}
+  thumbInput: {fileID: -391182720548073323, guid: 6febe43c10ec45344b8b6d24cdd1be0e, type: 3}
 --- !u!1 &8804410058744196537
 GameObject:
   m_ObjectHideFlags: 0
