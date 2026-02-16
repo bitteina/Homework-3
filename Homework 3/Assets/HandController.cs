@@ -1,3 +1,4 @@
+using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class HandController : MonoBehaviour
@@ -9,6 +10,24 @@ public class HandController : MonoBehaviour
 
     private Animator animator;
 
+    /*public GameObject followObject;
+    private float followSpeed = 30f;
+    private float rotateSpeed = 100f;
+    private Transform target;
+    private Rigidbody rb;
+    */
+
+    /*private void Start()
+    {
+        target = followObject.transform;
+        rb = GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+        rb.mass = 20f;
+
+        rb.position = target.position;
+        rb.rotation = target.rotation;
+    }*/
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -27,5 +46,17 @@ public class HandController : MonoBehaviour
         animator.SetFloat("Index", indexTouch);
         animator.SetFloat("Thumb", thumbTouch);
 
+        //PhysicsMove();
     }
+
+    /*private void PhysicsMove()
+    {
+        //Position
+        var distance = Vector3.Distance(target.position, transform.position);
+        rb.linearVelocity = (target.position - transform.position).normalized * (followSpeed * distance);
+        //Rotation
+        var q = target.rotation * Quaternion.Inverse(rb.rotation);
+        q.ToAngleAxis(out float angle, out Vector3 axis);
+        rb.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed);
+    }*/
 }
