@@ -4318,7 +4318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939210528}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5140,7 +5140,7 @@ GameObject:
   - component: {fileID: 1164009249}
   - component: {fileID: 1164009248}
   - component: {fileID: 1164009247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ButtonCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5184,7 +5184,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1164009247}
         m_TargetAssemblyTypeName: ButtonInteraction, Assembly-CSharp
-        m_MethodName: TurnOnLight
+        m_MethodName: ChangeLightColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5351,7 +5351,7 @@ GameObject:
   - component: {fileID: 1168722898}
   - component: {fileID: 1168722897}
   - component: {fileID: 1168722896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8938,7 +8938,7 @@ GameObject:
   - component: {fileID: 2091744097}
   - component: {fileID: 2091744099}
   - component: {fileID: 2091744098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Press
   m_TagString: Untagged
   m_Icon: {fileID: 0}
