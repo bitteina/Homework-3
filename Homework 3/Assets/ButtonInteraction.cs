@@ -17,7 +17,8 @@ public class ButtonInteraction : MonoBehaviour
     {
         //sound = GetComponent<AudioSource>();
         //light = GetComponent<Light>();
-        light.enabled = false;
+        
+        //light.enabled = false;
         isPressed = false;
     }
 
