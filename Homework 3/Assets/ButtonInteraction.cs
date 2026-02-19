@@ -45,6 +45,7 @@ public class ButtonInteraction : MonoBehaviour
     }
     public void ChangeLightColor()
     {
+        /*
         if (light.color == Color.white)
         {
             light.color = Color.red;
@@ -52,6 +53,18 @@ public class ButtonInteraction : MonoBehaviour
         else if (light.color == Color.red)
         {
             light.color = Color.white;
+        }*/
+        if (light.color == Color.cyan)
+        {
+            light.color = Color.magenta;
+        }
+        else if (light.color == Color.magenta)
+        {
+            light.color = Color.yellow;
+        }
+        else if (light.color == Color.yellow)
+        {
+            light.color = Color.cyan;
         }
     }
 
