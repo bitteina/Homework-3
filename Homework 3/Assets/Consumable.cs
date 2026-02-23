@@ -3,29 +3,23 @@ using UnityEngine;
 
 public class Consumable : MonoBehaviour
 {
-    [SerializeField] GameObject[] portions;
-    [SerializeField] int index = 0;
+    public GameObject full;
+    public GameObject eaten;
 
-    public bool IsFinished => index == portions.Length;
+    public bool IsFinished = false;
 
     private void Start()
     {
-        SetVisuals();   
+        full.SetActive(true);
+        eaten.SetActive(false);
     }
-
     public void Consume()
     { 
         if(!IsFinished)
         {
-            index++;
-        }
-    }
-
-    void SetVisuals()
-    {
-        for (int i = 0; i > portions.Length; i++)
-        {
-            portions[i].SetActive(i == index);
+            full.SetActive(false);
+            eaten.SetActive(true);
+            IsFinished = true;
         }
     }
 }

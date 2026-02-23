@@ -6,17 +6,21 @@ public class ColorsGame : MonoBehaviour
     public Light cyanLight;
     public Light magentaLight;
     public Light yellowLight;
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI message;
     private void Start()
     {
-        cyanLight = GetComponent<Light>();
-        magentaLight = GetComponent<Light>();
-        yellowLight = GetComponent<Light>();
 
-        TextMeshProUGUI text = GetComponent<TextMeshProUGUI>();
+        cyanLight = cyanLight.GetComponent<Light>();
+        magentaLight = magentaLight.GetComponent<Light>();
+        yellowLight = yellowLight.GetComponent<Light>();
+
+        message = message.GetComponent<TextMeshProUGUI>();
         //Set wrong colors at start
+        cyanLight.enabled = true;
         cyanLight.color = Color.yellow;
+        magentaLight.enabled = true;
         magentaLight.color = Color.cyan;
+        yellowLight.enabled = true;
         yellowLight.color = Color.magenta;
     }
 
@@ -25,7 +29,7 @@ public class ColorsGame : MonoBehaviour
         if (cyanLight.color == Color.cyan && magentaLight.color == Color.magenta && yellowLight.color == Color.yellow)
         {
             //change text "Good job" here
-            text.text = "Good job!";
+            message.text = "Good job!";
         }
     }
 }
